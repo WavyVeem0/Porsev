@@ -32,7 +32,7 @@
       
       peers = [{
         # Публичный ключ ВМ 2
-        publicKey = "<ВСТАВЬТЕ_ПУБЛИЧНЫЙ_КЛЮЧ_ВМ2>";
+        publicKey = "ltzQoiej1xlau4Dt13tJ5ETmGmo+paHKj4T/Y+w+RDw=";
         allowedIPs = [ "13.0.0.1/32" "192.168.13.0/24" ]; 
         endpoint = "100.0.13.1:51820"; 
         persistentKeepalive = 25;
