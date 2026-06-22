@@ -1,0 +1,12 @@
+services.frr = {
+    enable = true;
+    ospfd.enable = true;
+    config = ''
+      interface ens37
+       ip ospf cost 10000
+      router ospf
+       network 192.168.13.0/24 area 0
+       network 10.13.10.0/30 area 0
+       network 10.13.30.0/30 area 0
+    '';
+  };
