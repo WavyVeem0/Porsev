@@ -1,0 +1,14 @@
+services.frr = {
+    enable = true;
+    bgpd.enable = true;
+    config = ''
+      router bgp 2
+       bgp bestpath as-path multipath-relax
+       neighbor 10.13.10.1 remote-as 1
+       neighbor 10.13.20.2 remote-as 3
+       address-family ipv4 unicast
+        neighbor 10.13.10.1 weight 200
+        neighbor 10.13.20.2 weight 200
+       exit-address-family
+    '';
+  };
