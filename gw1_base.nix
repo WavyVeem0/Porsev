@@ -32,7 +32,7 @@
       
       peers = [{
         # Публичный ключ ВМ 3 [cite: 285]
-        publicKey = "<ВСТАВЬТЕ_ПУБЛИЧНЫЙ_КЛЮЧ_ВМ3>";
+        publicKey = "xhpjDKbTNga+pr/y+2PSfZOR73fXvDErps8UVntl/Xc=";
         allowedIPs = [ "13.0.0.2/32" "192.168.113.0/24" ]; # Маршруты в туннель [cite: 286]
         endpoint = "100.0.13.2:51820"; # [cite: 284]
         persistentKeepalive = 25; # [cite: 286]
