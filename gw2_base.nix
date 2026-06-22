@@ -1,7 +1,7 @@
 { config, pkgs, ... }:
 
 {
-  networking.hostName = "vm3-router";
+  networking.hostName = "ximper-gw2";
   networking.useDHCP = false;
 
   # Включение маршрутизации пакетов
