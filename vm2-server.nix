@@ -26,4 +26,15 @@
     openvpn
     easyrsa
   ];
+  systemd.services."openvpn@server" = {
+  description = "OpenVPN Server Manual Configuration";
+  wantedBy = [ "multi-user.target" ];
+  after = [ "network.target" ];
+  serviceConfig = {
+    # Явный запуск бинарника с указанием пути к вашему файлу
+    ExecStart = "${pkgs.openvpn}/bin/openvpn --config /etc/openvpn/server.conf";
+    Restart = "on-failure";
+    Type = "notify";
+  };
+};
 }
