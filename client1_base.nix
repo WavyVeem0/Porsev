@@ -1,7 +1,7 @@
 { config, pkgs, ... }:
 
 {
-  networking.hostName = "vm1-client";
+  networking.hostName = "ximper-client1";
   networking.useDHCP = false;
   
   networking.interfaces.ens33.ipv4.addresses = [{
